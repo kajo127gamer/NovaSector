@@ -38,13 +38,13 @@ Peasant
 	rpg_title = "Adventurer"
 	config_tag = "PEASANT"
 
-	allow_bureaucratic_error = FALSE // SKYRAT EDIT ADDITION
+	allow_bureaucratic_error = FALSE // NOVA EDIT ADDITION
 
 /datum/outfit/job/peasant
 	name = JOB_PEASANT
 	jobtype = /datum/job/peasant
 	id_trim = null
-	uniform = null // SKYRAT EDIT ADD
+	uniform = null // NOVA EDIT ADD
 	belt = null
 	suit = null
 	back = null
