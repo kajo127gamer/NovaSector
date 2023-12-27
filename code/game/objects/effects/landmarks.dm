@@ -65,13 +65,21 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/peasant
+	name = JOB_PEASANT
+	icon_state = JOB_PEASANT
+
+/obj/effect/landmark/start/peasant/override
+	jobspawn_override = TRUE
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/prisoner
 	name = "Prisoner"
 	icon_state = "Prisoner"
-	//NOVA EDIT: Start - Makes latejoin prisoners spawn in the prison instead of on the interlink.
+	//SKYRAT EDIT: Start - Makes latejoin prisoners spawn in the prison instead of on the interlink.
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
-	//NOVA EDIT: End - Makes latejoin prisoners spawn in the prison instead of on the interlink.
+	//SKYRAT EDIT: End - Makes latejoin prisoners spawn in the prison instead of on the interlink.
 
 /obj/effect/landmark/start/prisoner/after_round_start()
 	return
@@ -211,10 +219,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/cyborg
 	name = "Cyborg"
 	icon_state = "Cyborg"
-	//NOVA EDIT: Start - Makes latejoin cyborgs spawn in the station instead of on the interlink.
+	//SKYRAT EDIT: Start - Makes latejoin cyborgs spawn in the station instead of on the interlink.
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
-	//NOVA EDIT: End - Makes latejoin cyborgs spawn in the station instead of on the interlink.
+	//SKYRAT EDIT: End - Makes latejoin cyborgs spawn in the station instead of on the interlink.
 
 /obj/effect/landmark/start/ai
 	name = "AI"

@@ -41,6 +41,15 @@
 	var/nomadic_name = pick("roving clans", "barbaric tribes", "tides", "bandit kingdom", "tribal society", "marauder clans", "horde")
 	return "The [nomadic_name] of [..()]"
 
+/datum/job_department/peasant
+	department_name = DEPARTMENT_PEASANT
+	department_bitflags = DEPARTMENT_BITFLAG_PEASANT
+	nation_prefixes = list("Assa", "Mainte", "Tunnel", "Gris", "Grey", "Liath", "Grigio", "Ass", "Assi")
+
+/datum/job_department/peasant/generate_nation_name()
+	var/nomadic_name = pick("roving clans", "barbaric tribes", "tides", "bandit kingdom", "tribal society", "marauder clans", "horde")
+	return "The [nomadic_name] of [..()]"
+
 /// A special captain only department, for use by the preferences menu
 /datum/job_department/captain
 	department_name = DEPARTMENT_CAPTAIN
