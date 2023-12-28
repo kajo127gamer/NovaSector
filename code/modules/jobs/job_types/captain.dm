@@ -1,7 +1,7 @@
 /datum/job/captain
 	title = JOB_CAPTAIN
-	description = "Be responsible for the station, manage your Heads of Staff, \
-		keep the crew alive, be prepared to do anything and everything or die \
+	description = "Be responsible for the kingdom, manage your Dukes, \
+		keep the people alive, be prepared to do anything and everything or die \
 		horribly trying."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list("CentCom")
@@ -18,7 +18,6 @@
 	config_tag = "CAPTAIN"
 
 	outfit = /datum/outfit/job/captain
-	plasmaman_outfit = /datum/outfit/plasmaman/captain
 
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_CMD // NOVA EDIT - Original: paycheck_department = ACCOUNT_SEC
@@ -31,7 +30,7 @@
 		/datum/job_department/command,
 	)
 
-	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/flask/gold, /obj/item/toy/captainsaid/collector)
+	family_heirlooms = list()
 
 	mail_goodies = list(
 		/obj/item/clothing/mask/cigarette/cigar/havana = 20,
@@ -59,32 +58,26 @@
 	name = "Captain"
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/advanced/gold
-	id_trim = /datum/id_trim/job/captain
+	id = null
+	id_trim = null
 	uniform = /obj/item/clothing/under/rank/captain
-	suit = /obj/item/clothing/suit/armor/vest/capcarapace
-	backpack_contents = list(
-		/obj/item/melee/baton/telescopic = 1,
-		/obj/item/station_charter = 1,
-		)
-	belt = /obj/item/modular_computer/pda/heads/captain
-	ears = /obj/item/radio/headset/heads/captain/alt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	gloves = /obj/item/clothing/gloves/captain
-	head = /obj/item/clothing/head/hats/caphat
+	suit = null
+	backpack_contents = list()
+	belt = null
+	ears = null
+	glasses = null
+	gloves = null
+	head = /obj/item/clothing/head/costume/crown
 	shoes = /obj/item/clothing/shoes/laceup
 
-
-	backpack = /obj/item/storage/backpack/captain
-	satchel = /obj/item/storage/backpack/satchel/cap
-	duffelbag = /obj/item/storage/backpack/duffelbag/captain
-	messenger = /obj/item/storage/backpack/messenger/cap
+	back = null
+	backpack = null
+	satchel = null
+	duffelbag = null
+	messenger = null
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
-	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
-		/obj/item/stamp/head/captain,
-		)
+	chameleon_extras = list()
 	implants = list(/obj/item/implant/mindshield)
 	skillchips = list(/obj/item/skillchip/disk_verifier)
 

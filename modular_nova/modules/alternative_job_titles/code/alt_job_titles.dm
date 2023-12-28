@@ -19,16 +19,18 @@
 /datum/job/assistant
 	alt_titles = list(
 		"Assistant",
-		"Artist",
-		"Businessman",
-		"Businesswoman",
+		"Peasant",
+		"Adventurer",
+		"Explorer",
+		"Scout",
 		"Civilian",
 		"Entertainer",
 		"Freelancer",
-		"Tourist",
+		"Farmer",
 		"Trader",
-		"Off-Duty Crew",
-		"Off-Duty Staff",
+		"Outsider",
+		"Stranger",
+		"Visitor",
 	)
 
 /datum/job/atmospheric_technician
@@ -103,9 +105,9 @@
 /datum/job/captain
 	alt_titles = list(
 		"Captain",
-		"Commanding Officer",
-		"Site Manager",
-		"Station Commander",
+		"King",
+		"Pharaoh",
+		"Czar",
 	)
 
 /datum/job/cargo_technician
@@ -124,7 +126,7 @@
 		"Chaplain",
 		"High Priest",
 		"Imam",
-		"Magister",
+		"Acolyte",
 		"Monk",
 		"Oracle",
 		"Preacher",
@@ -132,6 +134,7 @@
 		"Pontifex",
 		"Rabbi",
 		"Reverend",
+		"Cleric",
 	)
 
 /datum/job/chemist
@@ -164,6 +167,8 @@
 		"Comedian",
 		"Jester",
 		"Joker",
+		"Traveling Artist",
+		"Itinerant Artist",
 	)
 
 /datum/job/cook
@@ -191,6 +196,7 @@
 		"Conservator",
 		"Journalist",
 		"Librarian",
+		"Hermit",
 	)
 
 /datum/job/customs_agent
@@ -217,9 +223,9 @@
 /datum/job/doctor
 	alt_titles = list(
 		"Medical Doctor",
-		"General Practitioner",
-		"Medical Resident",
-		"Nurse",
+		"Algebraist",
+		"Alchemist",
+		"Barber",
 		"Physician",
 		"Surgeon",
 		"Medical Student",
@@ -245,9 +251,10 @@
 /datum/job/head_of_security
 	alt_titles = list(
 		"Head of Security",
-		"Chief Constable",
-		"Chief of Security",
-		"Security Commander",
+		"Chief from this lands",
+		"Sir Duke",
+		"Boss of town",
+		"Leader of village",
 		"Sheriff",
 	)
 
@@ -304,10 +311,9 @@
 /datum/job/prisoner
 	alt_titles = list(
 		"Prisoner",
-		"Minimum Security Prisoner",
-		"Maximum Security Prisoner",
-		"SuperMax Security Prisoner",
-		"Protective Custody Prisoner",
+		"Slave",
+		"War Prisoner",
+		"Noble prisoner",
 	)
 
 /datum/job/psychologist
@@ -369,9 +375,9 @@
 /datum/job/security_officer
 	alt_titles = list(
 		"Security Officer",
-		"Peacekeeper",
-		"Security Operative",
-		"Security Cadet",
+		"Guard",
+		"Vigilant",
+		"Knight",
 	)
 
 /datum/job/shaft_miner
@@ -406,8 +412,7 @@
 /datum/job/warden
 	alt_titles = list(
 		"Warden",
-		"Brig Sergeant",
-		"Brig Governor",
-		"Dispatch Officer",
-		"Jailer",
+		"Captain of Guard",
+		"Lord Knight",
+		"Sir Knight",
 	)

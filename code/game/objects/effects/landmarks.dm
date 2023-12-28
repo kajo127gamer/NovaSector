@@ -57,19 +57,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 // START LANDMARKS FOLLOW. Don't change the names unless
 // you are refactoring shitty landmark code.
+
 /obj/effect/landmark/start/assistant
 	name = JOB_ASSISTANT
-	icon_state = JOB_ASSISTANT //icon_state is case sensitive. why are all of these capitalized? because fuck you that's why
+	icon_state = JOB_ASSISTANT
 
 /obj/effect/landmark/start/assistant/override
-	jobspawn_override = TRUE
-	delete_after_roundstart = FALSE
-
-/obj/effect/landmark/start/peasant
-	name = JOB_PEASANT
-	icon_state = JOB_PEASANT
-
-/obj/effect/landmark/start/peasant/override
 	jobspawn_override = TRUE
 	delete_after_roundstart = FALSE
 

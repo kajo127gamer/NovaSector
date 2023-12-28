@@ -1,7 +1,7 @@
 /datum/job/chaplain
 	title = JOB_CHAPLAIN
 	description = "Hold services and funerals, cremate people, preach your \
-		religion, protect the crew against cults."
+		religion, protect the people against cults and DEUS VULT!!!."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 1
@@ -11,7 +11,6 @@
 	config_tag = "CHAPLAIN"
 
 	outfit = /datum/outfit/job/chaplain
-	plasmaman_outfit = /datum/outfit/plasmaman/chaplain
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -21,7 +20,7 @@
 		/datum/job_department/service,
 		)
 
-	family_heirlooms = list(/obj/item/toy/windup_toolbox, /obj/item/reagent_containers/cup/glass/bottle/holywater)
+	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/bottle/holywater)
 
 	mail_goodies = list(
 		/obj/item/reagent_containers/cup/glass/bottle/holywater = 30,
@@ -113,17 +112,17 @@
 	name = "Chaplain"
 	jobtype = /datum/job/chaplain
 
-	id_trim = /datum/id_trim/job/chaplain
+	id_trim = null
+	id = null
 	uniform = /obj/item/clothing/under/rank/civilian/chaplain
-	backpack_contents = list(
-		/obj/item/camera/spooky = 1,
-		/obj/item/stamp/chap = 1,
-		)
-	belt = /obj/item/modular_computer/pda/chaplain
-	ears = /obj/item/radio/headset/headset_srv
+	backpack_contents = list()
+	belt = null
+	ears = null
+	shoes = null
+	satchel = null
+	duffelbag = null
+	messenger = null
+	backpack = null
 
-	backpack = /obj/item/storage/backpack/cultpack
-	satchel = /obj/item/storage/backpack/cultpack
-
-	chameleon_extras = /obj/item/stamp/chap
+	chameleon_extras = null
 	skillchips = list(/obj/item/skillchip/entrails_reader)

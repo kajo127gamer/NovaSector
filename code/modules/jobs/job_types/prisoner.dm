@@ -1,6 +1,6 @@
-/datum/job/prisoner
+/datum/job/slave
 	title = JOB_PRISONER
-	description = "Keep yourself occupied in permabrig."
+	description = "Keep yourself occupied in jail or serve your master."
 	department_head = list("The Security Team")
 	faction = FACTION_STATION
 	total_positions = 12		// NOVA EDIT: Original value (0)
@@ -11,7 +11,6 @@
 	config_tag = "PRISONER"
 
 	outfit = /datum/outfit/job/prisoner
-	plasmaman_outfit = /datum/outfit/plasmaman/prisoner
 
 	display_order = JOB_DISPLAY_ORDER_PRISONER
 	department_for_prefs = /datum/job_department/assistant // NOVA EDIT - ORIGINAL: /datum/job_department/security
@@ -21,7 +20,7 @@
 		/obj/effect/spawner/random/contraband/prison = 1
 	)
 
-	family_heirlooms = list(/obj/item/pen/blue)
+	family_heirlooms = list()
 	rpg_title = "Defeated Miniboss"
 	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN | JOB_CANNOT_OPEN_SLOTS
 
@@ -51,29 +50,13 @@
 	name = "Prisoner"
 	jobtype = /datum/job/prisoner
 
-	id = /obj/item/card/id/advanced/prisoner
-	id_trim = /datum/id_trim/job/prisoner
-	uniform = /obj/item/clothing/under/rank/prisoner
+	id_trim = null
+	uniform = null // NOVA EDIT ADD
 	belt = null
+	suit = null
+	back = null
 	ears = null
-	shoes = /obj/item/clothing/shoes/sneakers/orange
-
-/datum/outfit/job/prisoner/pre_equip(mob/living/carbon/human/H)
-	..()
-	if(prob(1)) // D BOYYYYSSSSS
-		head = /obj/item/clothing/head/beanie/black/dboy
-
-/datum/outfit/job/prisoner/post_equip(mob/living/carbon/human/new_prisoner, visualsOnly)
-	. = ..()
-
-	var/crime_name = new_prisoner.client?.prefs?.read_preference(/datum/preference/choiced/prisoner_crime)
-	if(!crime_name)
-		return
-	var/datum/prisoner_crime/crime = GLOB.prisoner_crimes[crime_name]
-	var/list/limbs_to_tat = new_prisoner.bodyparts.Copy()
-	for(var/i in 1 to crime.tattoos)
-		if(!length(SSpersistence.prison_tattoos_to_use) || visualsOnly)
-			return
-		var/obj/item/bodypart/tatted_limb = pick_n_take(limbs_to_tat)
-		var/list/tattoo = pick_n_take(SSpersistence.prison_tattoos_to_use)
-		tatted_limb.AddComponent(/datum/component/tattoo, tattoo["story"])
+	shoes = null
+	satchel = null
+	duffelbag = null
+	messenger = null

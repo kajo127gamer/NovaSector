@@ -50,8 +50,8 @@ GLOBAL_LIST_INIT(prisoner_crimes, init_prisoner_crimes())
 	tattoos = 0
 
 /datum/prisoner_crime/cloning
-	name = "Attempted Development of Cloning"
-	desc = "Attempted illegal research in the cloning sphere. Cloning, cloning construction, and cloning-related R&D was outlawed in 2560."
+	name = "Witchcraft"
+	desc = "Bring bad omen"
 	tattoos = 0
 
 /datum/prisoner_crime/attempted_murder
@@ -60,18 +60,18 @@ GLOBAL_LIST_INIT(prisoner_crimes, init_prisoner_crimes())
 	tattoos = 2
 
 /datum/prisoner_crime/bio_terrorism
-	name = "Biological Terrorism"
-	desc = "Created and or released a lethal biological agent/lifeform."
+	name = "Pestilence"
+	desc = "Bring the plague, bring evil!!!."
 	tattoos = 3
 
 /datum/prisoner_crime/classified
-	name = "Classified"
-	desc = "Consult Legal."
+	name = "Bought"
+	desc = "You were sold as a slave."
 	tattoos = 0
 
 /datum/prisoner_crime/espionage
-	name = "Corporate Espionage"
-	desc = "Conducted espionage against Nanotrasen for commercial purposes."
+	name = "Espionage"
+	desc = "Conducted espionage against Royalty for commercial purposes."
 	tattoos = 1
 
 /datum/prisoner_crime/counterfeiting
@@ -80,13 +80,13 @@ GLOBAL_LIST_INIT(prisoner_crimes, init_prisoner_crimes())
 	tattoos = 1
 
 /datum/prisoner_crime/enemy_of_the_corp
-	name = "Enemy of the Corporation"
-	desc = "Acted as, or knowingly aided, an enemy of Nanotrasen."
+	name = "Enemy of the Royalty"
+	desc = "Acted as, or knowingly aided, an enemy of Royalty."
 	tattoos = 1
 
 /datum/prisoner_crime/grand_sabo
 	name = "Grand Sabotage"
-	desc = "Engaged in malicious destructive actions, seriously threatening Nanotrasen employees and or infrastructure."
+	desc = "Engaged in malicious destructive actions, seriously threatening Royalty employees and or infrastructure."
 	tattoos = 2
 
 /datum/prisoner_crime/grand_theft
@@ -131,7 +131,7 @@ GLOBAL_LIST_INIT(prisoner_crimes, init_prisoner_crimes())
 
 /datum/prisoner_crime/other
 	name = "Other"
-	desc = "Consult Legal."
+	desc = "Consult your skin tone."
 	tattoos = 1
 
 /datum/prisoner_crime/ai_tampering
