@@ -21,6 +21,8 @@
 		"Assistant",
 		"Peasant",
 		"Adventurer",
+		"Blacksmith",
+		"Woodscutter",
 		"Explorer",
 		"Scout",
 		"Civilian",
