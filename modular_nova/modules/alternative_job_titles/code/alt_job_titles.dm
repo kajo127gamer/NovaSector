@@ -22,6 +22,7 @@
 		"Peasant",
 		"Adventurer",
 		"Blacksmith",
+		"Mercenary",
 		"Woodscutter",
 		"Explorer",
 		"Scout",
@@ -33,6 +34,7 @@
 		"Outsider",
 		"Stranger",
 		"Visitor",
+		"Artisan",
 	)
 
 /datum/job/atmospheric_technician
@@ -316,6 +318,10 @@
 		"Slave",
 		"War Prisoner",
 		"Noble prisoner",
+		"Thief",
+		"Robber",
+		"Raider",
+		"Burglar",
 	)
 
 /datum/job/psychologist
@@ -378,8 +384,10 @@
 	alt_titles = list(
 		"Security Officer",
 		"Guard",
+		"Executioner",
 		"Vigilant",
 		"Knight",
+		"Paladin",
 	)
 
 /datum/job/shaft_miner
