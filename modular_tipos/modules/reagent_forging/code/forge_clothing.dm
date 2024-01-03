@@ -11,11 +11,13 @@
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
 	w_class = WEIGHT_CLASS_BULKY
+	clothing_flags = THICKMATERIAL
 	skyrat_obj_flags = ANVIL_REPAIR
-	armor_type = /datum/armor/armor_forging_plate_armor/heavy
+	armor_type = /datum/armor/heavy_armor_forging_plate_armor
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_GREYSCALE | MATERIAL_COLOR
+	slowdown = 1.5
 
-/datum/armor/armor_forging_plate_armor/heavy
+/datum/armor/heavy_armor_forging_plate_armor
 	melee = 60
 	bullet = 50
 	fire = 30
@@ -40,11 +42,13 @@
 	icon_state = "plate_gloves"
 	resistance_flags = FIRE_PROOF
 	w_class = WEIGHT_CLASS_BULKY
+	clothing_flags = THICKMATERIAL
 	skyrat_obj_flags = ANVIL_REPAIR
-	armor_type = /datum/armor/gloves_forging_plate_gloves/heavy
+	armor_type = /datum/armor/heavy_gloves_forging_plate_gloves
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_GREYSCALE | MATERIAL_COLOR
+	slowdown = 1
 
-/datum/armor/gloves_forging_plate_gloves/heavy
+/datum/armor/heavy_gloves_forging_plate_gloves
 	melee = 60
 	bullet = 50
 	fire = 30
@@ -68,12 +72,14 @@
 	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
 	w_class = WEIGHT_CLASS_BULKY
+	clothing_flags = THICKMATERIAL
 	flags_inv = null
 	skyrat_obj_flags = ANVIL_REPAIR
-	armor_type = /datum/armor/helmet_forging_plate_helmet/heavy
+	armor_type = /datum/armor/heavy_helmet_forging_plate_helmet
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_GREYSCALE | MATERIAL_COLOR
+	slowdown = 1
 
-/datum/armor/helmet_forging_plate_helmet/heavy
+/datum/armor/heavy_helmet_forging_plate_helmet
 	melee = 60
 	bullet = 50
 	fire = 30
@@ -96,14 +102,16 @@
 	worn_icon_teshari = 'modular_nova/modules/reagent_forging/icons/mob/clothing/forge_clothing_teshari.dmi'
 	icon_state = "plate_boots"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
-	armor_type = /datum/armor/shoes_forging_plate_boots/heavy
+	armor_type = /datum/armor/heavy_shoes_forging_plate_boots
 	material_flags = MATERIAL_EFFECTS | MATERIAL_ADD_PREFIX | MATERIAL_GREYSCALE | MATERIAL_COLOR
+	clothing_flags = THICKMATERIAL
 	resistance_flags = FIRE_PROOF
 	w_class = WEIGHT_CLASS_BULKY
 	skyrat_obj_flags = ANVIL_REPAIR
 	can_be_tied = FALSE
+	slowdown = 1
 
-/datum/armor/shoes_forging_plate_boots/heavy
+/datum/armor/heavy_shoes_forging_plate_boots
 	melee = 40
 	bullet = 30
 	wound = 30
