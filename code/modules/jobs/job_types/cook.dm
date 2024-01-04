@@ -1,6 +1,6 @@
 /datum/job/cook
 	title = JOB_COOK
-	description = "Serve food, cook meat, keep the kingdom fed."
+	description = "Serve food, cook meat, keep the crew fed."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 2
@@ -11,6 +11,7 @@
 	var/cooks = 0 //Counts cooks amount
 
 	outfit = /datum/outfit/job/cook
+	plasmaman_outfit = /datum/outfit/plasmaman/chef
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -62,14 +63,17 @@
 	name = "Cook"
 	jobtype = /datum/job/cook
 
-	id_trim = null
-	uniform = null
+	id_trim = /datum/id_trim/job/cook/chef
+	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
 	suit = /obj/item/clothing/suit/toggle/chef
-	backpack_contents = list()
-	belt = null
-	ears = null
+	backpack_contents = list(
+		/obj/item/choice_beacon/ingredient = 1,
+		/obj/item/sharpener = 1,
+	)
+	belt = /obj/item/modular_computer/pda/cook
+	ears = /obj/item/radio/headset/headset_srv
 	head = /obj/item/clothing/head/utility/chefhat
-	mask = null
+	mask = /obj/item/clothing/mask/fakemoustache/italian
 
 	skillchips = list(/obj/item/skillchip/job/chef)
 

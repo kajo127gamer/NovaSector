@@ -19,22 +19,16 @@
 /datum/job/assistant
 	alt_titles = list(
 		"Assistant",
-		"Peasant",
-		"Adventurer",
-		"Blacksmith",
-		"Mercenary",
-		"Woodscutter",
-		"Explorer",
-		"Scout",
+		"Artist",
+		"Businessman",
+		"Businesswoman",
 		"Civilian",
 		"Entertainer",
 		"Freelancer",
-		"Farmer",
+		"Tourist",
 		"Trader",
-		"Outsider",
-		"Stranger",
-		"Visitor",
-		"Artisan",
+		"Off-Duty Crew",
+		"Off-Duty Staff",
 	)
 
 /datum/job/atmospheric_technician
@@ -109,9 +103,9 @@
 /datum/job/captain
 	alt_titles = list(
 		"Captain",
-		"King",
-		"Pharaoh",
-		"Czar",
+		"Commanding Officer",
+		"Site Manager",
+		"Station Commander",
 	)
 
 /datum/job/cargo_technician
@@ -130,7 +124,7 @@
 		"Chaplain",
 		"High Priest",
 		"Imam",
-		"Acolyte",
+		"Magister",
 		"Monk",
 		"Oracle",
 		"Preacher",
@@ -138,7 +132,6 @@
 		"Pontifex",
 		"Rabbi",
 		"Reverend",
-		"Cleric",
 	)
 
 /datum/job/chemist
@@ -171,8 +164,6 @@
 		"Comedian",
 		"Jester",
 		"Joker",
-		"Traveling Artist",
-		"Itinerant Artist",
 	)
 
 /datum/job/cook
@@ -200,7 +191,6 @@
 		"Conservator",
 		"Journalist",
 		"Librarian",
-		"Hermit",
 	)
 
 /datum/job/customs_agent
@@ -227,9 +217,9 @@
 /datum/job/doctor
 	alt_titles = list(
 		"Medical Doctor",
-		"Algebraist",
-		"Alchemist",
-		"Barber",
+		"General Practitioner",
+		"Medical Resident",
+		"Nurse",
 		"Physician",
 		"Surgeon",
 		"Medical Student",
@@ -255,10 +245,9 @@
 /datum/job/head_of_security
 	alt_titles = list(
 		"Head of Security",
-		"Chief from this lands",
-		"Sir Duke",
-		"Boss of town",
-		"Leader of village",
+		"Chief Constable",
+		"Chief of Security",
+		"Security Commander",
 		"Sheriff",
 	)
 
@@ -315,13 +304,10 @@
 /datum/job/prisoner
 	alt_titles = list(
 		"Prisoner",
-		"Slave",
-		"War Prisoner",
-		"Noble prisoner",
-		"Thief",
-		"Robber",
-		"Raider",
-		"Burglar",
+		"Minimum Security Prisoner",
+		"Maximum Security Prisoner",
+		"SuperMax Security Prisoner",
+		"Protective Custody Prisoner",
 	)
 
 /datum/job/psychologist
@@ -383,11 +369,9 @@
 /datum/job/security_officer
 	alt_titles = list(
 		"Security Officer",
-		"Guard",
-		"Executioner",
-		"Vigilant",
-		"Knight",
-		"Paladin",
+		"Peacekeeper",
+		"Security Operative",
+		"Security Cadet",
 	)
 
 /datum/job/shaft_miner
@@ -422,7 +406,8 @@
 /datum/job/warden
 	alt_titles = list(
 		"Warden",
-		"Captain of Guard",
-		"Lord Knight",
-		"Sir Knight",
+		"Brig Sergeant",
+		"Brig Governor",
+		"Dispatch Officer",
+		"Jailer",
 	)

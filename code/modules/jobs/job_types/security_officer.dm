@@ -1,12 +1,12 @@
 /datum/job/security_officer
 	title = JOB_SECURITY_OFFICER
-	description = "Protect the kingdom assets, follow the Standard Operating \
-		Procedure, purge pagans."
+	description = "Protect company assets, follow the Standard Operating \
+		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
-	total_positions = 2 //Handled in /datum/controller/occupations/proc/setup_officer_positions() //NOVA EDIT: SET TO 8, WAS 5
-	spawn_positions = 2 //Handled in /datum/controller/occupations/proc/setup_officer_positions() //NOVA EDIT: SEE ABOVE
+	total_positions = 8 //Handled in /datum/controller/occupations/proc/setup_officer_positions() //NOVA EDIT: SET TO 8, WAS 5
+	spawn_positions = 8 //Handled in /datum/controller/occupations/proc/setup_officer_positions() //NOVA EDIT: SEE ABOVE
 	supervisors = "the Head of Security, and the head of your assigned department (if applicable)"
 	minimal_player_age = 7
 	exp_requirements = 300
@@ -15,6 +15,7 @@
 	config_tag = "SECURITY_OFFICER"
 
 	outfit = /datum/outfit/job/security
+	plasmaman_outfit = /datum/outfit/plasmaman/security
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SEC
@@ -27,7 +28,7 @@
 		/datum/job_department/security,
 		)
 
-	family_heirlooms = list() //NOVA EDIT ADD - /peacekeeper
+	family_heirlooms = list(/obj/item/book/manual/wiki/security_space_law, /obj/item/clothing/head/beret/sec/peacekeeper) //NOVA EDIT ADD - /peacekeeper
 
 	mail_goodies = list(
 		/obj/item/food/donut/caramel = 10,
@@ -90,22 +91,22 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	switch(department)
 		if(SEC_DEPT_SUPPLY)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/supply
-			dep_trim = null
+			dep_trim = /datum/id_trim/job/security_officer/supply
 			destination = /area/station/security/checkpoint/supply
 			accessory = /obj/item/clothing/accessory/armband/cargo
 		if(SEC_DEPT_ENGINEERING)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/engi
-			dep_trim = null
+			dep_trim = /datum/id_trim/job/security_officer/engineering
 			destination = /area/station/security/checkpoint/engineering
 			accessory = /obj/item/clothing/accessory/armband/engine
 		if(SEC_DEPT_MEDICAL)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/med
-			dep_trim = null
+			dep_trim = /datum/id_trim/job/security_officer/medical
 			destination = /area/station/security/checkpoint/medical
 			accessory = /obj/item/clothing/accessory/armband/medblue
 		if(SEC_DEPT_SCIENCE)
 			ears = /obj/item/radio/headset/headset_sec/alt/department/sci
-			dep_trim = null
+			dep_trim = /datum/id_trim/job/security_officer/science
 			destination = /area/station/security/checkpoint/science
 			accessory = /obj/item/clothing/accessory/armband/science
 
@@ -204,31 +205,44 @@ GLOBAL_LIST_EMPTY(security_officer_distribution)
 	name = "Security Officer"
 	jobtype = /datum/job/security_officer
 
-	id_trim = null
-	id = null
-	uniform = /obj/item/clothing/under/dress/skirt/primitive_catgirl_body_wraps
-	suit = /obj/item/clothing/suit/armor/riot/knight
-	suit_store = null
-	backpack_contents = list(/obj/item/reagent_containers/pill/patch/style/brute, /obj/item/reagent_containers/pill/patch/style/brute, /obj/item/reagent_containers/pill/patch/style/brute)
-	belt = /obj/item/storage/belt/crusader
-	ears = null
-	gloves = null //NOVA EDIT CHANGE - Original: /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/knight //NOVA EDIT CHANGE - Original: /obj/item/clothing/head/helmet/sec
-	shoes = null
-	l_pocket = null
-	r_pocket = null
-	r_hand = /obj/item/claymore/weak
+	id_trim = /datum/id_trim/job/security_officer
+	uniform = /obj/item/clothing/under/rank/security/officer
+	suit = /obj/item/clothing/suit/armor/vest/alt/sec
+	suit_store = /obj/item/gun/energy/disabler
+	backpack_contents = list(
+		/obj/item/evidencebag = 1,
+		)
+	belt = /obj/item/modular_computer/pda/security
+	ears = /obj/item/radio/headset/headset_sec/alt
+	gloves = /obj/item/clothing/gloves/color/black/security //NOVA EDIT CHANGE - Original: /obj/item/clothing/gloves/color/black
+	head = /obj/item/clothing/head/security_garrison //NOVA EDIT CHANGE - Original: /obj/item/clothing/head/helmet/sec
+	shoes = /obj/item/clothing/shoes/jackboots/sec
+	l_pocket = /obj/item/restraints/handcuffs
+	r_pocket = /obj/item/assembly/flash/handheld
 
-	backpack = /obj/item/storage/backpack/satchel/crusader
-	satchel = /obj/item/storage/backpack/satchel/crusader
-	duffelbag = /obj/item/storage/backpack/satchel/crusader
-	messenger = /obj/item/storage/backpack/satchel/crusader
-	back = /obj/item/storage/backpack/satchel/crusader
+	backpack = /obj/item/storage/backpack/security
+	satchel = /obj/item/storage/backpack/satchel/sec
+	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+	messenger = /obj/item/storage/backpack/messenger/sec
 
-	box = null
-	chameleon_extras = list()
+	box = /obj/item/storage/box/survival/security
+	chameleon_extras = list(
+		/obj/item/clothing/glasses/hud/security/sunglasses,
+		/obj/item/clothing/head/helmet,
+		/obj/item/gun/energy/disabler,
+		)
 		//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
 	implants = list(/obj/item/implant/mindshield)
+
+/datum/outfit/job/security/mod
+	name = "Security Officer (MODsuit)"
+
+	suit_store = /obj/item/tank/internals/oxygen
+	back = /obj/item/mod/control/pre_equipped/security
+	suit = null
+	head = null
+	mask = /obj/item/clothing/mask/gas/sechailer
+	internals_slot = ITEM_SLOT_SUITSTORE
 
 /obj/item/radio/headset/headset_sec/alt/department/Initialize(mapload)
 	. = ..()

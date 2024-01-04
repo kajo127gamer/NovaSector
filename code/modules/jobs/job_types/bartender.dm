@@ -1,6 +1,6 @@
 /datum/job/bartender
 	title = JOB_BARTENDER
-	description = "Serve booze, mix drinks, keep the kingdom drunk."
+	description = "Serve booze, mix drinks, keep the crew drunk."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 1
@@ -10,6 +10,7 @@
 	config_tag = "BARTENDER"
 
 	outfit = /datum/outfit/job/bartender
+	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -46,23 +47,17 @@
 	name = "Bartender"
 	jobtype = /datum/job/bartender
 
-	id_trim = null
-	id = null
-	neck = null
-	uniform = /datum/id_trim/job/bartender
-	suit = null
+	id_trim = /datum/id_trim/job/bartender
+	neck = /obj/item/clothing/neck/bowtie
+	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
+	suit = /obj/item/clothing/suit/armor/vest
 	backpack_contents = list(
 		/obj/item/storage/box/beanbag = 1,
 		)
-	belt = null
-	ears = null
-	glasses = null
-	shoes = null
-	satchel = null
-	duffelbag = null
-	messenger = null
-	backpack = null
-	back = null
+	belt = /obj/item/modular_computer/pda/bar
+	ears = /obj/item/radio/headset/headset_srv
+	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+	shoes = /obj/item/clothing/shoes/laceup
 
 /datum/outfit/job/bartender/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
