@@ -3,8 +3,6 @@
 	generic = "Tail"
 	organ_type = /obj/item/organ/external/tail
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/tails.dmi'
-	special_render_case = TRUE
-	special_colorize = TRUE
 	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 	genetic = TRUE
 	/// Can we use this tail for the fluffy tail turf emote?
@@ -28,9 +26,6 @@
 		// Hide accessory if flagged to do so
 		else if(wearer.wear_suit.flags_inv & HIDETAIL)
 			return TRUE
-
-/datum/sprite_accessory/tails/get_special_render_state(mob/living/carbon/human/wearer)
-	return icon_state
 
 /datum/sprite_accessory/tails/none
 	name = "None"
@@ -59,11 +54,8 @@
 	color_src = USE_ONE_COLOR
 
 /datum/sprite_accessory/tails/monkey/default
-	name = "Monkey"
-	icon_state = "monkey"
-	icon = 'icons/mob/human/species/monkey/monkey_tail.dmi'
+	icon_state = "monkey_default"
 	recommended_species = list(SPECIES_HUMAN, SPECIES_SYNTH, SPECIES_FELINE, SPECIES_MAMMAL, SPECIES_MONKEY, SPECIES_GHOUL)
-	color_src = FALSE
 	organ_type = /obj/item/organ/external/tail/monkey
 
 /datum/sprite_accessory/tails/mammal
@@ -442,3 +434,7 @@
 /datum/sprite_accessory/tails/mammal/wagging/peacock
 	name = "Peacock"
 	icon_state = "peacock"
+
+/datum/sprite_accessory/tails/mammal/wagging/rattlesnake
+	name = "Rattlesnake"
+	icon_state = "rattlesnake"

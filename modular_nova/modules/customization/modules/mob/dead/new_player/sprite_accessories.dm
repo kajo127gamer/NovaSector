@@ -39,16 +39,10 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 
 	///Set this to true to make an accessory appear as color customizable in preferences despite advanced color settings being off, will also prevent the accessory from being reset
 	var/always_color_customizable
-	///Whether the accessory can have a special icon_state to render, i.e. wagging tails
-	var/special_render_case
 	///Special case of whether the accessory should be shifted in the X dimension, check taur genitals for example
 	var/special_x_dimension
-	///Special case of whether the accessory should have a different icon, check taur genitals for example
-	var/special_icon_case
 	///Special case for MODsuit overlays
 	var/use_custom_mod_icon
-	///Special case of applying a different color
-	var/special_colorize
 	///If defined, the accessory will be only available to ckeys inside the list. ITS ASSOCIATIVE, ie. ("ckey" = TRUE). For speed
 	var/list/ckey_whitelist
 	///Whether this feature is genetic, and thus modifiable by DNA consoles
@@ -86,15 +80,6 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 
 /datum/sprite_accessory/proc/is_hidden(mob/living/carbon/human/owner)
 	return FALSE
-
-/datum/sprite_accessory/proc/get_special_render_state(mob/living/carbon/human/H)
-	return null
-
-/datum/sprite_accessory/proc/get_special_render_key(mob/living/carbon/human/owner)
-	return key
-
-/datum/sprite_accessory/proc/get_special_render_colour(mob/living/carbon/human/H, passed_state)
-	return null
 
 /datum/sprite_accessory/proc/get_special_icon(mob/living/carbon/human/H, passed_state)
 	return icon
@@ -136,18 +121,40 @@ GLOBAL_LIST_EMPTY(cached_mutant_icon_files)
 	return FALSE
 
 /datum/sprite_accessory/pod_hair
-	name = "None"
 	icon = 'modular_nova/master_files/icons/mob/species/podperson_hair.dmi'
-	icon_state = "None"
 	key = "pod_hair"
 	recommended_species = list(SPECIES_PODPERSON, SPECIES_PODPERSON_WEAK)
 	organ_type = /obj/item/organ/external/pod_hair
 
+/datum/sprite_accessory/pod_hair/none
+	name = "None"
+	icon_state = "none"
+	factual = FALSE
+
 /datum/sprite_accessory/caps
 	key = "caps"
 	generic = "Caps"
+	icon = 'icons/mob/human/species/mush_cap.dmi'
+	relevent_layers = list(BODY_ADJ_LAYER)
 	color_src = USE_ONE_COLOR
-	organ_type = /obj/item/organ/external/cap
+	organ_type = /obj/item/organ/external/mushroom_cap
+	genetic = TRUE
+
+/datum/sprite_accessory/caps/is_hidden(mob/living/carbon/human/human)
+	if(((human.head?.flags_inv & HIDEHAIR) || (human.wear_mask?.flags_inv & HIDEHAIR)) || (key in human.try_hide_mutant_parts))
+		return TRUE
+
+	return FALSE
+
+/datum/sprite_accessory/caps/none
+	name = "None"
+	icon_state = "none"
+	color_src = null
+	factual = FALSE
+
+/datum/sprite_accessory/caps/round
+	name = "Round"
+	icon_state = "round"
 
 /datum/sprite_accessory/body_markings
 	key = "body_markings"

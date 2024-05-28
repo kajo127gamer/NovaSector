@@ -25,6 +25,8 @@
 	var/use_mob_sprite_as_obj_sprite = FALSE
 	///Does this organ have any bodytypes to pass to it's bodypart_owner?
 	var/external_bodytypes = NONE
+	///Does this organ have any bodyshapes to pass to it's bodypart_owner?
+	var/external_bodyshapes = NONE
 	///Which flags does a 'modification tool' need to have to restyle us, if it all possible (located in code/_DEFINES/mobs)
 	var/restyle_flags = NONE
 
@@ -57,6 +59,19 @@
 	if(restyle_flags)
 		RegisterSignal(src, COMSIG_ATOM_RESTYLE, PROC_REF(on_attempt_feature_restyle))
 
+/obj/item/organ/external/Insert(mob/living/carbon/receiver, special, movement_flags)
+	. = ..()
+	receiver.update_body_parts()
+
+/obj/item/organ/external/Remove(mob/living/carbon/organ_owner, special, movement_flags)
+	// NOVA EDIT ADDITION START
+	if(mutantpart_key)
+		transfer_mutantpart_info(organ_owner, special)
+	// NOVA EDIT ADDITION END
+	. = ..()
+	if(!special)
+		organ_owner.update_body_parts()
+
 /obj/item/organ/external/mob_insert(mob/living/carbon/receiver, special, movement_flags)
 	if(!should_external_organ_apply_to(type, receiver))
 		stack_trace("adding a [type] to a [receiver.type] when it shouldn't be!")
@@ -66,10 +81,15 @@
 	if(!.)
 		return
 
+	// NOVA EDIT ADDITION START
+	if(mutantpart_key)
+		copy_to_mutant_bodyparts(receiver, special)
+	// NOVA EDIT ADDITION END
 	if(bodypart_overlay.imprint_on_next_insertion) //We only want this set *once*
 		var/feature_name = receiver.dna.features[bodypart_overlay.feature_key]
 		if (isnull(feature_name))
-			bodypart_overlay.set_appearance_from_dna(receiver.dna) // NOVA EDIT CHANGE - ORIGINAL: feature_name = receiver.dna.species.external_organs[type]
+			if(!bodypart_overlay.set_appearance_from_dna(receiver.dna)) // NOVA EDIT CHANGE - ORIGINAL: feature_name = receiver.dna.species.external_organs[type]
+				bodypart_overlay.set_appearance_from_name(receiver.dna.species.external_organs[type]) // NOVA EDIT ADDITION
 		// NOVA EDIT CHANGE START - Puts the following line in an else block
 		else
 			bodypart_overlay.set_appearance_from_name(feature_name)
@@ -78,12 +98,15 @@
 
 	if(external_bodytypes)
 		receiver.synchronize_bodytypes()
+	if(external_bodyshapes)
+		receiver.synchronize_bodyshapes()
 
 	receiver.update_body_parts()
 
 /obj/item/organ/external/mob_remove(mob/living/carbon/organ_owner, special, moving)
 	if(!special)
 		organ_owner.synchronize_bodytypes()
+		organ_owner.synchronize_bodyshapes()
 		organ_owner.update_body_parts()
 	return ..()
 
@@ -214,7 +237,7 @@
 	slot = ORGAN_SLOT_EXTERNAL_SNOUT
 
 	preference = "feature_lizard_snout"
-	external_bodytypes = BODYTYPE_SNOUTED
+	external_bodyshapes = BODYSHAPE_SNOUTED
 
 	//dna_block = DNA_SNOUT_BLOCK // NOVA EDIT REMOVAL - Customization - We have our own system to handle DNA.
 	restyle_flags = EXTERNAL_RESTYLE_FLESH

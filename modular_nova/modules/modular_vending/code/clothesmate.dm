@@ -121,13 +121,14 @@
 				/obj/item/clothing/suit/urban = 5,
 				/obj/item/clothing/suit/duster = 5,
 				/obj/item/clothing/suit/fallsparka = 5,
-				/obj/item/clothing/suit/croptop = 5,
+				/obj/item/clothing/suit/jacket/croptop = 5,
 				/obj/item/clothing/suit/modernwintercoatthing = 5,
 				/obj/item/clothing/suit/hooded/wintercoat/colourable = 5,
 				/obj/item/clothing/suit/apron/chef/colorable_apron = 5,
 				/obj/item/clothing/suit/warm_coat = 5,
 				/obj/item/clothing/suit/warm_sweater = 5,
 				/obj/item/clothing/suit/heart_sweater = 5,
+				/obj/item/clothing/suit/crop_jacket = 5,
 			),
 		),
 
@@ -155,6 +156,7 @@
 				/obj/item/clothing/under/costume/nova/bathrobe = 5,
 				/obj/item/clothing/mask/gas/respirator = 5,
 				/obj/item/clothing/mask/surgical/greyscale = 5,
+				/obj/item/clothing/glasses/blindfold/color = 5,
 			)
 		)
 	)

@@ -129,6 +129,14 @@ GLOBAL_LIST_INIT(loadout_helmets, generate_loadout_items(/datum/loadout_item/hea
 	name = "Mothic Softcap"
 	item_path = /obj/item/clothing/head/mothcap
 
+/datum/loadout_item/head/frontiercap
+	name = "Frontier Cap"
+	item_path = /obj/item/clothing/head/soft/frontier_colonist
+
+/datum/loadout_item/head/frontiercap/medic
+	name = "Frontier Medical Cap"
+	item_path = /obj/item/clothing/head/soft/frontier_colonist/medic
+
 /*
 *	FEDORAS
 */
@@ -417,6 +425,22 @@ GLOBAL_LIST_INIT(loadout_helmets, generate_loadout_items(/datum/loadout_item/hea
 	name = "Blastwave Peaked Cap"
 	item_path = /obj/item/clothing/head/blastwave/officer
 
+/datum/loadout_item/head/plague_hat
+	name = "Plague Doctor's Hat"
+	item_path = /obj/item/clothing/head/bio_hood/plague
+
+/datum/loadout_item/head/chap_nunh
+	name = "Nun's Hood"
+	item_path = /obj/item/clothing/head/chaplain/nun_hood
+
+/datum/loadout_item/head/chap_kippah
+	name = "Jewish Kippah"
+	item_path = /obj/item/clothing/head/chaplain/kippah
+
+/datum/loadout_item/head/chap_nunv
+	name = "Nun's Veil"
+	item_path = /obj/item/clothing/head/chaplain/habit_veil
+
 /*
 *	COWBOY
 */
@@ -568,6 +592,14 @@ GLOBAL_LIST_INIT(loadout_helmets, generate_loadout_items(/datum/loadout_item/hea
 /datum/loadout_item/head/imperial_white
 	name = "White Naval Officer Cap"
 	item_path = /obj/item/clothing/head/hats/imperial/white
+
+/datum/loadout_item/head/jester
+	name = "Jester hat"
+	item_path = /obj/item/clothing/head/costume/jester
+
+/datum/loadout_item/head/jesteralt
+	name = "Jester hat (Alt)"
+	item_path = /obj/item/clothing/head/costume/jesteralt
 
 /datum/loadout_item/head/azulea_oldblood
 	name = "Oldblood's Royal cap"

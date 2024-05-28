@@ -7,6 +7,7 @@
 	worn_icon_state = "crusader_belt"
 	inhand_icon_state = "utility"
 	w_class = WEIGHT_CLASS_BULKY //Cant fit a sheath in your bag
+	interaction_flags_click = NEED_DEXTERITY
 
 /obj/item/storage/belt/crusader/Initialize(mapload)
 	. = ..()
@@ -18,11 +19,13 @@
 		canhold = list(
 			/obj/item/storage/belt/storage_pouch,
 			/obj/item/forging/reagent_weapon/sword,
+			/obj/item/forging/reagent_weapon/katana,
+			/obj/item/forging/reagent_weapon/bokken,
+			/obj/item/forging/reagent_weapon/dagger,
 			/obj/item/melee/sabre,
 			/obj/item/claymore,
 			/obj/item/melee/cleric_mace,
 			/obj/item/knife,
-			/obj/item/melee/baton,
 			/obj/item/melee/baton,
 			/obj/item/nullrod,	//holds any subset of nullrod in the sheath-storage - - -
 		),
@@ -47,10 +50,10 @@
 
 //Overrides normal dumping code to instead dump from the pouch item inside
 /datum/storage/belt/crusader/dump_content_at(atom/dest_object, mob/dumping_mob)
-	var/atom/used_belt = parent?.resolve()
+	var/atom/used_belt = parent
 	if(!used_belt)
 		return
-	var/obj/item/storage/belt/storage_pouch/pouch = locate() in real_location?.resolve()
+	var/obj/item/storage/belt/storage_pouch/pouch = locate() in real_location
 	if(!pouch)
 		pouch.balloon_alert(dumping_mob, "no pouch!")
 		return //oopsie!! If we don't have a pouch! You're fucked!
@@ -64,9 +67,7 @@
 	atom_storage.show_contents(user)
 	return
 
-/obj/item/storage/belt/crusader/AltClick(mob/user)	//This is basically the same as the normal sheath, but because there's always an item locked in the first slot it uses the second slot for swords
-	if(!user.can_perform_action(src, NEED_DEXTERITY))
-		return
+/obj/item/storage/belt/crusader/click_alt(mob/user)	//This is basically the same as the normal sheath, but because there's always an item locked in the first slot it uses the second slot for swords
 	if(contents.len == 2)
 		var/obj/item/drawn_item = contents[2]
 		add_fingerprint(user)
@@ -74,12 +75,12 @@
 		if(!user.put_in_hands(drawn_item))
 			to_chat(user, span_notice("You fumble for [drawn_item] and it falls on the floor."))
 			update_appearance()
-			return
+			return CLICK_ACTION_SUCCESS
 		user.visible_message(span_notice("[user] takes [drawn_item] out of [src]."), span_notice("You take [drawn_item] out of [src]."))
 		update_appearance()
 	else
 		to_chat(user, span_warning("[src] is empty!"))
-	. = ..()
+	return CLICK_ACTION_SUCCESS
 
 /obj/item/storage/belt/crusader/update_icon(updates)
 	if(contents.len == 2)	//Checks for a sword/rod in the sheath slot, changes the sprite accordingly
@@ -108,7 +109,7 @@
 	name = "storage pouch"
 	desc = span_notice("Click on this to open your belt's inventory!")
 	icon_state = "storage_pouch_icon"
-	worn_icon_state = "no_name"	//Intentionally sets the worn icon to an error
+	worn_icon_state = "storage_pouch_icon"
 	w_class = WEIGHT_CLASS_BULKY //Still cant put it in your bags, its technically a belt
 	anchored = 1	//Dont want people taking it out with their hands
 
