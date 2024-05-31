@@ -1,9 +1,9 @@
-#define VERY_HIGH_EVENT_FREQ 64
-#define HIGH_EVENT_FREQ 32
-#define MED_EVENT_FREQ 16
-#define LOW_EVENT_FREQ 8
-#define VERY_LOW_EVENT_FREQ 4
-#define MIN_EVENT_FREQ 2
+#define VERY_HIGH_EVENT_FREQ 32
+#define HIGH_EVENT_FREQ 16
+#define MED_EVENT_FREQ 8
+#define LOW_EVENT_FREQ 4
+#define VERY_LOW_EVENT_FREQ 2
+#define MIN_EVENT_FREQ 1
 
 /**
  * ICES - Intensity Credit Events System
@@ -89,7 +89,7 @@
 
 /datum/round_event_control/anomaly/anomaly_grav/high
 	max_occurrences = 1
-	min_players = 45
+	min_players = 6
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_hallucination
@@ -98,7 +98,7 @@
 
 /datum/round_event_control/anomaly/anomaly_pyro
 	max_occurrences = 1
-	min_players = 45
+	min_players = 6
 	weight = MED_EVENT_FREQ
 
 /datum/round_event_control/anomaly/anomaly_vortex
@@ -205,13 +205,13 @@
  */
 /datum/round_event_control/disease_outbreak
 	max_occurrences = 0
-	min_players = 45
+	min_players = 6
 	weight = VERY_LOW_EVENT_FREQ
 	intensity_restriction = TRUE
 
 /datum/round_event_control/disease_outbreak/advanced
 	max_occurrences = 2
-	min_players = 45
+	min_players = 6
 	weight = HIGH_EVENT_FREQ
 	intensity_restriction = TRUE
 
@@ -354,7 +354,7 @@
 
 /datum/round_event_control/sandstorm
 	max_occurrences = 1
-	min_players = 45
+	min_players = 6
 	weight = MED_EVENT_FREQ
 	intensity_restriction = TRUE
 
