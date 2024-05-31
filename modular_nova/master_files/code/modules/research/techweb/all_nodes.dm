@@ -140,6 +140,7 @@
 /datum/techweb_node/cyber_organs/New()
 	design_ids += list(
 		"cybernetic_tongue",
+		"cybernetic_tongue_lizard",
 	)
 	return ..()
 
@@ -231,6 +232,7 @@
 	design_ids += list(
 		"borg_upgrade_clamp",
 		"borg_upgrade_brush",
+		"borg_upgrade_shrink",
 	)
 	return ..()
 

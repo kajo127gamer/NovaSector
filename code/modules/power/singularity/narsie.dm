@@ -147,7 +147,7 @@
 	start_ending_the_round()
 
 /obj/narsie/attack_ghost(mob/user)
-	makeNewConstruct(/mob/living/basic/construct/harvester, user, cultoverride = TRUE, loc_override = loc)
+	make_new_construct(/mob/living/basic/construct/harvester, user, cultoverride = TRUE, loc_override = loc)
 
 /obj/narsie/process()
 	var/datum/component/singularity/singularity_component = singularity.resolve()
@@ -234,7 +234,7 @@
 	addtimer(CALLBACK(src, PROC_REF(narsie_spawn_animation_end)), 3.5 SECONDS)
 
 /obj/narsie/proc/narsie_spawn_animation_end()
-	var/datum/component/singularity/singularity_component = singularity.resolve()
+	var/datum/component/singularity/singularity_component = singularity?.resolve()
 	singularity_component?.roaming = TRUE
 
 /**

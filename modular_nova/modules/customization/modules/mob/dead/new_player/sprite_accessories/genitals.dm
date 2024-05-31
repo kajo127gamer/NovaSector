@@ -2,8 +2,6 @@
 #define TAUR_DIMENSION_X 64
 
 /datum/sprite_accessory/genital
-	special_render_case = TRUE
-	special_colorize = TRUE
 	var/associated_organ_slot
 	/// If true, then there should be a variant in the icon file that's slightly pinkier to match human base colors.
 	var/has_skintone_shading = FALSE
@@ -57,15 +55,6 @@
 		else
 			return TRUE
 
-/datum/sprite_accessory/genital/get_special_render_state(mob/living/carbon/human/human)
-	var/obj/item/organ/external/genital/genital = human.get_organ_slot(associated_organ_slot)
-	return "[genital?.sprite_suffix]"
-
-/datum/sprite_accessory/genital/get_special_render_colour(mob/living/carbon/human/human, render_state)
-	var/obj/item/organ/external/genital/genital = human.get_organ_slot(associated_organ_slot)
-	if(genital?.uses_skin_color && HAS_TRAIT(human, TRAIT_USES_SKINTONES))
-		return skintone2hex(human.skin_tone)
-
 /datum/sprite_accessory/genital/penis
 	icon = 'modular_nova/master_files/icons/mob/sprite_accessory/genitals/penis_onmob.dmi'
 	organ_type = /obj/item/organ/external/genital/penis
@@ -74,7 +63,6 @@
 	color_src = USE_MATRIXED_COLORS
 	always_color_customizable = TRUE
 	center = TRUE
-	special_icon_case = TRUE
 	special_x_dimension = TRUE
 	//default_color = DEFAULT_SKIN_OR_PRIMARY //This is the price we're paying for sheaths
 	relevent_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
@@ -149,7 +137,6 @@
 	associated_organ_slot = ORGAN_SLOT_TESTICLES
 	key = ORGAN_SLOT_TESTICLES
 	always_color_customizable = TRUE
-	special_icon_case = TRUE
 	special_x_dimension = TRUE
 	default_color = DEFAULT_SKIN_OR_PRIMARY
 	relevent_layers = list(BODY_ADJ_LAYER, BODY_BEHIND_LAYER)
