@@ -317,7 +317,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = FIRE_PROOF
 	dog_fashion = null
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
 	light_on = FALSE
@@ -399,7 +398,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = FIRE_PROOF
 	dog_fashion = null
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
 	light_on = FALSE
@@ -480,7 +478,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = NONE
 	dog_fashion = null
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
 	light_on = FALSE
@@ -556,7 +553,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = NONE
 	dog_fashion = null
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
 	light_on = FIRE_PROOF
@@ -631,7 +627,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF
 	resistance_flags = NONE
 	dog_fashion = null
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_range = 4
 	light_power = 0.8
 	light_on = FIRE_PROOF

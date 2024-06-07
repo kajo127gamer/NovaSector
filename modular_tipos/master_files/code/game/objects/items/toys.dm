@@ -148,7 +148,6 @@
 	name = "\improper Figura de acción de Catherine"
 	icon_state = "cathy"
 	toysay = "Bueno, pero gracias a dios todo salio bien al final."
-	toysound = 'sound/weapons/kenetic_accel.ogg'
 
 /obj/item/toy/figure/tipos/zsle
 	name = "\improper Figura de acción de Zsle"
