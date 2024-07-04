@@ -85,3 +85,11 @@
 	emote_type = EMOTE_AUDIBLE
 	vary = FALSE
 	sound = 'modular_tipos/master_files/sound/voice/OMG.ogg'
+
+/datum/emote/living/omg
+	key = "lawyerup"
+	key_third_person = "lawyerups"
+	message = "appears to belive they are a lawyer"
+	emote_type = EMOTE_AUDIBLE
+	vary = FALSE
+	sound = 'modular_tipos/master_files/sound/voice/lawyerup.ogg'
