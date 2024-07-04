@@ -86,7 +86,7 @@
 	vary = FALSE
 	sound = 'modular_tipos/master_files/sound/voice/OMG.ogg'
 
-/datum/emote/living/omg
+/datum/emote/living/lawyerup
 	key = "lawyerup"
 	key_third_person = "lawyerups"
 	message = "appears to belive they are a lawyer"
