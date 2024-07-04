@@ -1,19 +1,3 @@
-/datum/emote/living/ambatuka
-	key = "ambatuka"
-	key_third_person = "ambatukas"
-	message = "ambatuka's hardly"
-	emote_type = EMOTE_AUDIBLE
-	vary = FALSE
-	sound = 'modular_tipos/master_files/sound/voice/ambatuka.ogg'
-
-/datum/emote/living/ambatuka_g
-	key = "ambatuka_g"
-	key_third_person = "ambatukas"
-	message = "ambatuka's echoingly"
-	emote_type = EMOTE_AUDIBLE
-	vary = FALSE
-	sound = 'modular_tipos/master_files/sound/voice/ambatuka_g.ogg'
-
 /datum/emote/living/aauugghh
 	key = "aauugghh"
 	key_third_person = "aauugghhs"
