@@ -7,6 +7,7 @@
 	icon_dead = "boar_dead"
 	speak = list("PREPARE THYSELF!!", "THY BOAR IS NOW!!!", "hmmmmm, delicious twinks..... i need them....", "CARGO, WE LAKIN' DIAMONDS!!!")
 	speak_emote = list("roars", "grunts", "boars")
+	speak_chance = 10
 	gold_core_spawnable = FRIENDLY_SPAWN
 	turns_per_move = 3
 	butcher_results = list(
