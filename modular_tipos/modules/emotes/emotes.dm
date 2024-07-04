@@ -71,7 +71,7 @@
 	sound = 'modular_tipos/master_files/sound/voice/rizz.ogg'
 
 /datum/emote/living/WTH
-	key = "WTH"
+	key = "wth"
 	key_third_person = "WTHs"
 	message = "looks confused by that information!"
 	emote_type = EMOTE_AUDIBLE
