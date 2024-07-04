@@ -68,7 +68,7 @@
 	emote_type = EMOTE_AUDIBLE
 	vary = FALSE
 	sound = 'modular_tipos/master_files/sound/voice/WTH.ogg'
-/datum/emote/living/
+/datum/emote/living/omg
 	key = "omg"
 	key_third_person = "omgs"
 	message = "looks perplexed by that piece of information!"
