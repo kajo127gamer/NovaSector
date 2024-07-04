@@ -12139,6 +12139,7 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 8
 	},
+/mob/living/simple_animal/pet/boar,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
 "epF" = (

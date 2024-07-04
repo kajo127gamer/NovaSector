@@ -25704,6 +25704,7 @@
 /area/station/command/gateway)
 "huS" = (
 /obj/effect/turf_decal/trimline/purple/filled/corner,
+/mob/living/simple_animal/pet/boar,
 /turf/open/floor/iron/white/smooth_corner,
 /area/station/science/xenobiology)
 "hvf" = (
