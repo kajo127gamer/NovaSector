@@ -8468,6 +8468,7 @@
 #include "modular_tipos\modules\clothing\suits\armor.dm"
 #include "modular_tipos\modules\company_imports\code\armament_datums\aeon_equipment.dm"
 #include "modular_tipos\modules\customization\modules\mob\dead\new_player\sprite_accesories\ears.dm"
+#include "modular_tipos\modules\emotes\emotes.dm"
 #include "modular_tipos\modules\loadout\loadout_items\loadout_datum.dm"
 #include "modular_tipos\modules\mining\equipment\explorer_gear.dm"
 #include "modular_tipos\modules\mob\living\simple_animal\pet\boar.dm"
