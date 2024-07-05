@@ -11,7 +11,7 @@
 	gold_core_spawnable = FRIENDLY_SPAWN
 	turns_per_move = 3
 	butcher_results = list(
-		/obj/item/food/meat/slab = 6
+		/obj/item/food/meat/slab = 3
 	)
 
 /mob/living/simple_animal/pet/boar/god
