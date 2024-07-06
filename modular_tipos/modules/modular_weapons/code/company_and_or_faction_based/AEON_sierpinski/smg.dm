@@ -22,7 +22,7 @@
 	spawn_magazine_type =/obj/item/ammo_box/magazine/s8mm
 
 	can_suppress = FALSE
-	can_bayonet = FALSE
+	//can_bayonet = FALSE
 	burst_size = 3
 	fire_delay = 0.2 SECONDS
 	spread = 3

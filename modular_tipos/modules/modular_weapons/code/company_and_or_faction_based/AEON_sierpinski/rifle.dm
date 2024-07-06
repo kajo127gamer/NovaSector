@@ -27,7 +27,7 @@
 	bolt_type = BOLT_TYPE_NO_BOLT
 	can_be_sawn_off = FALSE
 	can_suppress = FALSE
-	can_bayonet = FALSE
+	//can_bayonet = FALSE
 
 /obj/item/gun/ballistic/rifle/sierpinski/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_TRAPPISTE)
