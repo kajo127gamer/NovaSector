@@ -77,15 +77,16 @@
 	uniform = /obj/item/clothing/under/dress/skirt/primitive_catgirl_body_wraps
 	suit = /obj/item/clothing/suit/armor/riot/knight
 	suit_store = null
-	backpack_contents = list(/obj/item/reagent_containers/pill/patch/style/brute, /obj/item/reagent_containers/pill/patch/style/brute, /obj/item/reagent_containers/pill/patch/style/brute)
+	backpack_contents = list( /obj/item/reagent_containers/pill/patch/style/brute = 3, /obj/item/coin/silver = 2, )
 	belt = /obj/item/storage/belt/crusader
 	ears = null
 	gloves = null //NOVA EDIT CHANGE - Original: /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/knight //NOVA EDIT CHANGE - Original: /obj/item/clothing/head/helmet/sec
-	shoes = null
-	l_pocket = null
+	shoes = /obj/item/clothing/shoes/forging_plate_boots
+	l_pocket = /obj/item/coin/gold
 	r_pocket = null
 	r_hand = /obj/item/claymore/weak
+	l_hand = /obj/item/shield/roman
 
 	backpack = /obj/item/storage/backpack/satchel/crusader
 	satchel = /obj/item/storage/backpack/satchel/crusader

@@ -56,9 +56,7 @@
 /datum/job/bartender
 	alt_titles = list(
 		"Bartender",
-		"Barista",
-		"Barkeeper",
-		"Mixologist",
+		"Innkeeper",
 	)
 
 /datum/job/bitrunner
@@ -110,6 +108,12 @@
 		"King",
 		"Pharaoh",
 		"Czar",
+		"Emperor",
+		"Tianzi",
+		"Sultan",
+		"Kaiser",
+		"Cacique",
+		"Great Sachem",
 	)
 
 /datum/job/cargo_technician
@@ -137,6 +141,9 @@
 		"Rabbi",
 		"Reverend",
 		"Cleric",
+		"Shaman",
+		"Thaumaturge",
+		"Bonekeeper",
 	)
 
 /datum/job/chemist
@@ -199,6 +206,7 @@
 		"Journalist",
 		"Librarian",
 		"Hermit",
+		"Sage",
 	)
 
 /datum/job/customs_agent
@@ -257,7 +265,7 @@
 		"Sir Duke",
 		"Boss of town",
 		"Leader of village",
-		"Sheriff",
+		"Great knight of the court",
 	)
 
 /datum/job/janitor
@@ -314,12 +322,13 @@
 	alt_titles = list(
 		"Prisoner",
 		"Slave",
-		"War Prisoner",
+		"War prisoner",
 		"Noble prisoner",
 		"Thief",
 		"Robber",
 		"Raider",
 		"Burglar",
+		"Bad rogue",
 	)
 
 /datum/job/psychologist
@@ -384,6 +393,7 @@
 		"Guard",
 		"Executioner",
 		"Vigilant",
+		"Sentinel",
 		"Knight",
 		"Paladin",
 	)

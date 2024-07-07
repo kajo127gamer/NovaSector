@@ -40,8 +40,10 @@
 	jobtype = /datum/job/curator
 
 	id_trim = null
-	uniform = null
-	backpack_contents = list()
+	uniform = /obj/item/clothing/under/dress/skirt/primitive_catgirl_body_wraps
+	neck = /obj/item/clothing/suit/ashwalkermantle/cape
+	suit = /obj/item/clothing/suit/wizrobe
+	backpack_contents = list( /obj/item/book = 1, )
 	belt = null
 	ears = null
 	shoes = null
@@ -53,4 +55,6 @@
 	duffelbag = null
 	messenger = null
 	backpack = null
-	back = null
+	back = /obj/item/storage/backpack
+	l_pocket = /obj/item/coin/silver
+	r_pocket = /obj/item/coin/silver

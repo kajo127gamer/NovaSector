@@ -69,6 +69,8 @@
 	gloves = null
 	head = /obj/item/clothing/head/costume/crown
 	shoes = /obj/item/clothing/shoes/laceup
+	l_pocket = /obj/item/coin/gold
+	r_pocket = /obj/item/coin/gold
 
 	back = null
 	backpack = null

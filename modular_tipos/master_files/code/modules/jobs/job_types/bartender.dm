@@ -63,6 +63,8 @@
 	messenger = null
 	backpack = null
 	back = null
+	l_pocket = /obj/item/coin/silver
+	r_pocket = /obj/item/coin/silver
 
 /datum/outfit/job/bartender/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()

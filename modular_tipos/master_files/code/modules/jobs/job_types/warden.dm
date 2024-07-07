@@ -56,8 +56,8 @@
 	gloves = null //NOVA EDIT CHANGE - Original: /obj/item/clothing/gloves/color/black
 	head = null //NOVA EDIT CHANGE - Original: /obj/item/clothing/head/hats/warden/red
 	shoes = null
-	l_pocket = null
-	r_pocket = null
+	l_pocket = /obj/item/coin/gold
+	r_pocket = /obj/item/coin/gold
 
 	backpack = null
 	satchel = null

@@ -43,8 +43,8 @@
 	jobtype = /datum/job/doctor
 
 	id_trim = null
-	uniform = null
-	suit = null
+	uniform = /obj/item/clothing/under/dress/skirt/primitive_catgirl_body_wraps
+	suit = /obj/item/clothing/under/costume/gladiator/ash_walker/white
 	suit_store = null
 	belt = null
 	ears = null
@@ -61,3 +61,5 @@
 	box = null
 	chameleon_extras = null
 	skillchips = list(/obj/item/skillchip/entrails_reader)
+	l_pocket = /obj/item/coin/silver
+	r_pocket = /obj/item/coin/silver

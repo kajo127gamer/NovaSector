@@ -45,9 +45,10 @@ Assistant
 	name = JOB_ASSISTANT
 	jobtype = /datum/job/assistant
 	id_trim = null
-	uniform = null // NOVA EDIT ADD
+	uniform = /obj/item/clothing/under/dress/skirt/primitive_catgirl_body_wraps // NOVA EDIT ADD
 	belt = null
-	suit = null
+	neck = /obj/item/clothing/suit/ashwalkermantle/cape
+	suit = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	back = null
 	ears = null
 	shoes = null
@@ -55,6 +56,8 @@ Assistant
 	duffelbag = null
 	messenger = null
 	backpack = null
+	l_pocket = /obj/item/coin/silver
+	r_pocket = /obj/item/coin/silver
 
 /datum/outfit/job/assistant/consistent
 	name = "Assistant - Consistent"
