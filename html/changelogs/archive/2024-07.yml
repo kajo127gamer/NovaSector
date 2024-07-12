@@ -628,3 +628,74 @@
   - sound: pen click now has a proper sound
   grungussuss, ported from Beestation:
   - sound: abductee, hypnotized and brainwashed now have sound when becoming one.
+2024-07-11:
+  NovaBot13:
+  - bugfix: stacking machines can be linked with its console via multitool
+  - bugfix: humanoid species featured are randomized correctly once again
+  - bugfix: Amputating a paraplegic's leg no longer miraculously allows them to walk.
+  - bugfix: Fixed a whoopsie with bait-related calculations for fishing.
+  - rscadd: Living flesh arms have a chance to actually touch the thing they're targeting
+      instead of pulling it. Careful with supermatter!
+  - qol: Docked emergency shuttles will always reset their departure timer when a
+      hostile environment is stopped, regardless of if the timer displays ETD or ERR.
+  - bugfix: Fixed lights stopping emitting light in some situations
+  - rscdel: 'Removed the shuttle manipulator entries for the following shuttles: Northstar
+      ferry, Omegastation arrivals shuttle, and Donutstation cargo ferry. (These shuttles
+      didn''t actually exist but they still had entries in the manipulator.)'
+  - bugfix: 'Fixed the following shuttles flying in unexpected directions: Basic CC
+      Ferry, Meat Ferry, Lighthouse Ferry, ERT bounty shuttle, Kilo cargo shuttle,
+      Pubby cargo shuttle, and Delta cargo shuttle.'
+  - bugfix: Fixed the ERT bounty shuttle having incorrect offsets in the shuttle navigation
+      console.
+  OrbisAnima:
+  - rscadd: Adds stone bricks to the trading goods you can order from cargo.
+  grungussuss:
+  - sound: Zippos, Lighters and cigarettes now have sound
+  honkpocket:
+  - rscadd: Added 'Contractor' alt title for assistant
+2024-07-12:
+  Jolly:
+  - bugfix: '[Birdshot] The Ordnance freezer chamber is now linked to an APC, much
+      like the burn chamber.'
+  - bugfix: '[Birdshot] The Janitors quarters no longer uses `/area/station/commons`,
+      instead, it uses the janitors regular area.'
+  - bugfix: '[Birdshot] The entertainment center now has an APC.'
+  - bugfix: '[Birdshot] A handful of smaller areas have received air alarms.'
+  LT3:
+  - image: Incident displays got a makeover
+  Melbert:
+  - rscadd: 'Bot Language station trait split into two: One that affects bots (retains
+      the old weight and cost) and one that affects machine (half weight, double the
+      cost)'
+  - rscdel: Bot Language station trait and (new) Machine Language station trait no
+      longer affect newly created machines or bots, just those present at game start
+  - rscdel: Machine Language station trait cannot affect the Automated Announcer in
+      telecomms
+  NovaBot13:
+  - bugfix: Using a dual wielded deck to add another card to a single card bases the
+      position of the resulting hand of cards on the position of the card.
+  - bugfix: You no longer try to pull out someones eyes in combat mode if they have
+      cranial fissure
+  - rscadd: Most door animations now better line up with when they are/are not passable.
+  - bugfix: Fixed an oversight that caused knockdown vomits to stun instead.
+  - bugfix: fixes the rightmost wawastation cryo cell
+  - rscadd: You can emag grapple gun to use it on station.
+  - code_imp: added a crash report and removes an arg
+  - balance: bluespace navigation gigabeacons are now unlocked with Applied Bluespace
+      Research
+  - bugfix: Vapes use correct fill level overlays
+  - bugfix: Steaks and meatpacks no longer have an absurd amount of blood stored inside
+      of them.
+  - balance: Buffed the matrix flip skillchip duration. Lowered the stamina cost very,
+      very slightly.
+  - qol: You can now longer matrix-flip yourself into exhaustion, unless the emote
+      is unintentional.
+  - bugfix: Fixed being unable to cauterise wounds with improvised cautery tools such
+      as welders.
+  - refactor: Refactored a lot of speech modifiers to use a component instead of copied
+      over code.
+  - bugfix: all icons in the crafting menu (some that you missed) are now fixed permanently
+  - qol: TV helmet no longer has gas mask FOV, nor does it give you flash sensitivity.
+  - qol: Since those are gone, removed pepper proof from it as well.
+  - bugfix: The modsuit paint kit is no longer broken.
+  - bugfix: gave tram's primary tool storage functional disposals
