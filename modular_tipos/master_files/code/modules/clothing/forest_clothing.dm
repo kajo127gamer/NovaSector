@@ -31,6 +31,14 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	can_adjust = FALSE
 
+/obj/item/clothing/under/costume/tipos_forest/robe_blue
+	name = "Blue robe"
+	desc = ""
+	icon_state = "blue_robe"
+	inhand_icon_state = null
+	body_parts_covered = CHEST|GROIN|ARMS
+	can_adjust = FALSE
+
 // Face Clothing
 
 /obj/item/clothing/mask/tipos_forest
@@ -82,3 +90,29 @@
 	atom_storage.set_holdable(list(
 		/obj/item/coin,
 		/obj/item/dice),)
+
+/obj/item/storage/tipos_forest/pouch/lord
+
+/obj/item/storage/tipos_forest/pouch/lord/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/coin/gold = 5,
+		/obj/item/coin/silver = 7,
+	)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/tipos_forest/pouch/town
+
+/obj/item/storage/tipos_forest/pouch/town/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/coin/silver = 3,
+	)
+	generate_items_inside(items_inside, src)
+
+/obj/item/storage/tipos_forest/pouch/captain
+
+/obj/item/storage/tipos_forest/pouch/captain/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/coin/gold = 2,
+		/obj/item/coin/silver = 5,
+	)
+	generate_items_inside(items_inside, src)
