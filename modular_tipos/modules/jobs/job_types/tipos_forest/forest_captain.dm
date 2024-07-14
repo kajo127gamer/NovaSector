@@ -37,10 +37,5 @@
 	r_hand = /obj/item/flashlight/lantern
 	box = null
 
-	backpack = /obj/item/storage/backpack/satchel/crusader
-	satchel = /obj/item/storage/backpack/satchel/crusader
-	duffelbag = /obj/item/storage/backpack/satchel/crusader
-	messenger = /obj/item/storage/backpack/satchel/crusader
-
 /datum/outfit/job/tipos_forest/capitan/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()
