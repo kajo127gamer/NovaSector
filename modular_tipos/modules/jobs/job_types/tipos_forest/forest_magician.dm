@@ -27,11 +27,11 @@
 	ears = null
 	mask = /obj/item/clothing/mask/tipos_forest/hood
 	neck = /obj/item/clothing/neck/cloak/tipos_forest/cape
-	suit = null
-	uniform = /obj/item/clothing/under/costume/tipos_forest/robe
+	suit = /obj/item/clothing/suit/costume/tipos_forest/robe_white
+	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	gloves = /obj/item/clothing/gloves/ring
 	belt = null
-	shoes = /obj/item/clothing/shoes/workboots/mining
+	shoes = /obj/item/clothing/shoes/jackboots/tipos_forest/leather
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/flare/torch

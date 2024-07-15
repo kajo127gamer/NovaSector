@@ -27,7 +27,7 @@
 	ears = null
 	mask = null
 	neck = null
-	suit = null
+	suit = /obj/item/clothing/suit/ashwalkermantle/cape
 	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	gloves = null
 	belt = null
@@ -36,6 +36,7 @@
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/flare/torch
 	box = null
+	back = null
 
 /datum/outfit/job/tipos_forest/adventurer/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()

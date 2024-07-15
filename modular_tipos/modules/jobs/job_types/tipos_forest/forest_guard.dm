@@ -28,19 +28,16 @@
 	mask = null
 	neck = null
 	suit = null
-	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
+	uniform = /obj/item/clothing/under/costume/tipos_forest/gambeson
 	gloves = null
 	belt = /obj/item/storage/belt/crusader
-	shoes = /obj/item/clothing/shoes/jackboots/ashwalker
+	shoes = /obj/item/clothing/shoes/jackboots/tipos_forest/leather
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/lantern
+	l_hand = /obj/item/storage/backpack/satchel/crusader
 	box = null
-
-	backpack = /obj/item/storage/backpack/satchel/crusader
-	satchel = /obj/item/storage/backpack/satchel/crusader
-	duffelbag = /obj/item/storage/backpack/satchel/crusader
-	messenger = /obj/item/storage/backpack/satchel/crusader
+	back = null
 
 /datum/outfit/job/tipos_forest/guard/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()

@@ -4,8 +4,8 @@
 	description = ""
 	department_head = list(JOB_F_LORD)
 	faction = FACTION_FOREST
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = SUPERVISOR_LORD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "MAGE"
@@ -27,11 +27,11 @@
 	ears = null
 	mask = /obj/item/clothing/mask/tipos_forest/hood
 	neck = null
-	suit = null
-	uniform = /obj/item/clothing/under/costume/tipos_forest/robe_blue
+	suit = /obj/item/clothing/suit/costume/tipos_forest/robe_blue
+	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	gloves = /obj/item/clothing/gloves/ring/silver
 	belt = null
-	shoes = /obj/item/clothing/shoes/workboots/mining
+	shoes = /obj/item/clothing/shoes/jackboots/tipos_forest/leather
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/flare/torch

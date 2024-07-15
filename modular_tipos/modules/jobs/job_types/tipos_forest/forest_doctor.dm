@@ -31,11 +31,13 @@
 	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	gloves = null
 	belt = null
-	shoes = /obj/item/clothing/shoes/sandal
+	shoes = /obj/item/clothing/shoes/jackboots/tipos_forest/black
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/lantern
+	l_hand = /obj/item/storage/backpack/satchel/leather
 	box = null
+	back = null
 
 /datum/outfit/job/tipos_forest/doctor/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()

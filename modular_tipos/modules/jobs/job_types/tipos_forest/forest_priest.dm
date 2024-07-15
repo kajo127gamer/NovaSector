@@ -33,11 +33,11 @@
 	belt = null
 	shoes = /obj/item/clothing/shoes/sandal
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
-	r_pocket = /obj/item/flashlight/flare/torch
+	r_pocket = /obj/item/forging/reagent_weapon/dagger
+	r_hand = /obj/item/flashlight/flare/torch
+	l_hand = /obj/item/nullrod
 	box = null
-	backpack_contents = list(
-		/obj/item/nullrod  = 1,
-		)
+	back = null
 
 /datum/outfit/job/tipos_forest/priest/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()

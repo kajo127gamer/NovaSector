@@ -27,15 +27,17 @@
 	ears = null
 	mask = null
 	neck = null
-	suit = /obj/item/clothing/suit/ashwalkermantle/cape
+	suit = /obj/item/clothing/suit/apron/chef/colorable_apron
 	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker/caesar_clothes
 	gloves = null
 	belt = null
-	shoes = /obj/item/clothing/shoes/jackboots/ashwalker
+	shoes = /obj/item/clothing/shoes/jackboots/tipos_forest/leather
 	l_pocket = /obj/item/storage/tipos_forest/pouch/town
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/flare/torch
+	l_hand = /obj/item/storage/backpack/satchel/leather
 	box = null
+	back = null
 
 /datum/outfit/job/tipos_forest/cook/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()

@@ -32,7 +32,7 @@
 
 	id_trim = null
 	id = /obj/item/card/cardboard
-	head = /obj/item/clothing/head/costume/crown
+	head = /obj/item/clothing/head/costume/crown/tipos_forest
 	ears = null
 	mask = null
 	neck = /obj/item/clothing/neck/cloak/tipos_forest/lord
@@ -45,6 +45,7 @@
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/lantern
 	box = null
+	back = null
 
 /datum/outfit/job/tipos_forest/lord/post_equip(mob/living/carbon/human/equipped, visualsOnly = FALSE)
 	. = ..()
