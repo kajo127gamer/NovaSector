@@ -35,7 +35,6 @@
 	l_pocket = /obj/item/storage/tipos_forest/pouch/captain
 	r_pocket = /obj/item/forging/reagent_weapon/dagger
 	r_hand = /obj/item/flashlight/lantern
-	l_hand = /obj/item/storage/backpack/satchel/crusader
 	box = null
 	back = null
 
