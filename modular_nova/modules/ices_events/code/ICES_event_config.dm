@@ -20,9 +20,9 @@
  */
 /datum/controller/subsystem/events
 	/// Rate at which we add intensity credits
-	var/intensity_credit_rate = 27000
+	var/intensity_credit_rate = 97000
 	/// Last world time we added an intensity credit
-	var/intensity_credit_last_time = 8400
+	var/intensity_credit_last_time = 2750
 	/// Current active ICES multiplier
 	var/active_intensity_multiplier = EVENT_MIDPOP_TIMER_MULTIPLIER
 	/// LOWPOP player threshold
@@ -159,8 +159,8 @@
  * Carp Migration
  */
 /datum/round_event_control/carp_migration
-	max_occurrences = 2
-	weight = MED_EVENT_FREQ
+	max_occurrences = 1
+	weight = LOW_EVENT_FREQ
 
 /**
  * Cortical Borers

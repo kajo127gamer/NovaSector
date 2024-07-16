@@ -601,7 +601,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 		var/static/list/escape_objectives = list(
 			/datum/objective/escape,
 			/datum/objective/survive,
-			///datum/objective/martyr, // NOVA EDIT REMOVAL
+			/datum/objective/martyr, // NOVA EDIT REMOVAL
 			/datum/objective/exile,
 		)
 		for (var/datum/objective/check_objective in objectives)

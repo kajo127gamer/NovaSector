@@ -81,7 +81,7 @@ GLOBAL_LIST_EMPTY(scanned_fish_by_techweb)
 	name = "Fish Scanning Experiment 2"
 	description = "An experiment requiring more fish species to be scanned to unlock the 'Chasm' setting for the fishing portal."
 	points_reward = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS )
-	required_atoms = list(/obj/item/fish = 8)
+	required_atoms = list(/obj/item/fish = 4)
 	next_experiments = list(/datum/experiment/scanning/fish/third)
 	fish_source_reward = /datum/fish_source/portal/chasm
 
@@ -89,7 +89,7 @@ GLOBAL_LIST_EMPTY(scanned_fish_by_techweb)
 	name = "Fish Scanning Experiment 3"
 	description = "An experiment requiring even more fish species to be scanned to unlock the 'Ocean' setting for the fishing portal."
 	points_reward = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_4_POINTS )
-	required_atoms = list(/obj/item/fish = 14)
+	required_atoms = list(/obj/item/fish = 7)
 	next_experiments = list(/datum/experiment/scanning/fish/fourth, /datum/experiment/scanning/fish/holographic)
 	fish_source_reward = /datum/fish_source/portal/ocean
 
@@ -111,6 +111,6 @@ GLOBAL_LIST_EMPTY(scanned_fish_by_techweb)
 	name = "Fish Scanning Experiment 4"
 	description = "An experiment requiring lotsa fish species to unlock the 'Hyperspace' setting for the fishing portal."
 	points_reward = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS )
-	required_atoms = list(/obj/item/fish = 21)
+	required_atoms = list(/obj/item/fish = 10)
 	next_experiments = null
 	fish_source_reward = /datum/fish_source/portal/hyperspace

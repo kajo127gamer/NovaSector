@@ -2,7 +2,7 @@
 /datum/experiment/scanning/people
 	allowed_experimentors = list(/obj/item/experi_scanner, /obj/item/scanner_wand)
 	/// Number of people you need to scan
-	var/required_count = 2
+	var/required_count = 1
 	/// Does the scanned target need to have a mind?
 	var/mind_required = FALSE
 	/// How do we describe the people you need to scan?

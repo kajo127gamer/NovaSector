@@ -2,7 +2,7 @@
 	name = "Material Scanning Experiment"
 	description = "Base experiment for scanning atoms with materials"
 	exp_tag = "Material Scan"
-	total_requirement = 8
+	total_requirement = 4
 	possible_types = list(/obj/structure/chair, /obj/structure/toilet, /obj/structure/table, /turf/closed/wall, /turf/open/floor)
 	///List of materials that can be required.
 	var/possible_material_types = list()
