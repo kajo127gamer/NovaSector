@@ -690,6 +690,7 @@ GLOBAL_VAR_INIT(revolutionary_win, FALSE)
 		/datum/job_department/science,
 		/datum/job_department/security,
 		/datum/job_department/service,
+		/datum/job_department/tipos_forest, //TIPOS EDIT CHANGE
 	)
 
 	for(var/department_type in department_types)
