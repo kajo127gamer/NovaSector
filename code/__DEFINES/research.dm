@@ -5,14 +5,14 @@
 #define TECHWEB_POINT_TYPE_GENERIC "General Research"
 
 //!  Amount of points required to unlock nodes of corresponding tiers
-#define TECHWEB_TIER_1_POINTS 40
-#define TECHWEB_TIER_2_POINTS 80
-#define TECHWEB_TIER_3_POINTS 120
-#define TECHWEB_TIER_4_POINTS 160
-#define TECHWEB_TIER_5_POINTS 200
+#define TECHWEB_TIER_1_POINTS 20
+#define TECHWEB_TIER_2_POINTS 40
+#define TECHWEB_TIER_3_POINTS 60
+#define TECHWEB_TIER_4_POINTS 80
+#define TECHWEB_TIER_5_POINTS 100
 
 //! Amount of points gained per second by a single R&D server, see: [research][code/controllers/subsystem/research.dm]
-#define TECHWEB_SINGLE_SERVER_INCOME 1
+#define TECHWEB_SINGLE_SERVER_INCOME 2
 
 //! Swab cell line types
 #define CELL_LINE_TABLE_SLUDGE "cell_line_sludge_table"

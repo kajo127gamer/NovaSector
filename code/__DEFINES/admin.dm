@@ -119,7 +119,7 @@
 ///Maximum keys that can be bound to one button
 #define MAX_COMMANDS_PER_KEY 5
 ///Max amount of keypress messages per second over two seconds before client is autokicked
-#define MAX_KEYPRESS_AUTOKICK 50
+#define MAX_KEYPRESS_AUTOKICK 100
 ///Length of held key buffer
 #define HELD_KEY_BUFFER_LENGTH 15
 
