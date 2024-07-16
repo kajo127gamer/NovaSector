@@ -8520,6 +8520,7 @@
 #include "modular_tipos\modules\company_imports\code\armament_datums\aeon_equipment.dm"
 #include "modular_tipos\modules\customization\modules\mob\dead\new_player\sprite_accesories\ears.dm"
 #include "modular_tipos\modules\emotes\emotes.dm"
+#include "modular_tipos\modules\food_and_drinks\machinery\microwave.dm"
 #include "modular_tipos\modules\jobs\job_types\tipos_forest\_defines_forest.dm"
 #include "modular_tipos\modules\jobs\job_types\tipos_forest\forest_adventurer.dm"
 #include "modular_tipos\modules\jobs\job_types\tipos_forest\forest_captain.dm"
