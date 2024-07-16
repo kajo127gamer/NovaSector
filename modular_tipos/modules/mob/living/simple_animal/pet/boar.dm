@@ -1,6 +1,7 @@
 /mob/living/simple_animal/pet/boar
 	name = "boar"
 	desc = "Un pequeño boar salvaje, mejor mantenerlo alejado de los monos"
+	health = 200
 	icon = 'modular_tipos/master_files/icons/mob/simple/boarmobs.dmi'
 	icon_state = "boar"
 	icon_living = "boar"
@@ -16,7 +17,6 @@
 
 /mob/living/simple_animal/pet/boar/god
 	name = "boar"
-	max_health = 2000
 	health = 2000
 	desc = "Un pequeño boar salvaje, mejor mantenerlo alejado de los monos"
 	icon = 'modular_tipos/master_files/icons/mob/simple/boarmobs.dmi'
